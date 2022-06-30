@@ -1,0 +1,9 @@
+git status
+QUAIS ARQUIVOS FORMA OU NÃO INCLUÍDOS NO CONTROLE DE VERSÃO
+****************************************************************
+git add "meu codigo.txt" 
+ADICIONA O ARQUIVO AO CONTROLE DE VERSÃO
+****************************************************************
+git add .
+ADICIONA TODOS OS ARQUIVOS AO CONTROLE DE VERSÃO
+****************************************************************
