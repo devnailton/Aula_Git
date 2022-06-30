@@ -16,3 +16,26 @@ git config --global user.email "nltsilva8@gmail.com"
 ENTER
 git config --global user.name "NailtonSSantos"
 ****************************************************************
+git push
+
+CONFIGURAR PRIMEIRO PUSH
+git remote add origin https://github.com/NailtonSSantos/Aula_Git.git
+
+git push --set-upstream origin main
+****************************************************************
+git reflog
+MOSTRA AS VERSÕES DO CÓDIGO
+****************************************************************
+git reset --hard 165hh85
+VOLTA A VERSÃO ANTERIOR, DESCRITA PELO ID 165hh85
+****************************************************************
+git branch
+VER AS BRANCHS
+****************************************************************
+git branch staging
+CRIA A BRANCH staging
+****************************************************************
+git checkout staging
+MNUDA PARA A BRANCH staging
+
+
