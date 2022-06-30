@@ -7,3 +7,12 @@ ADICIONA O ARQUIVO AO CONTROLE DE VERSÃO
 git add .
 ADICIONA TODOS OS ARQUIVOS AO CONTROLE DE VERSÃO
 ****************************************************************
+git commit -m "Commit Inicial"
+CRIA A PRIMEIRA VERSÃO DO CÓDIGO
+****************************************************************
+CONFIGURA O GITHUB PARA O PRIMEIRO ACESSO
+
+git config --global user.email "nltsilva8@gmail.com"
+ENTER
+git config --global user.name "NailtonSSantos"
+****************************************************************
