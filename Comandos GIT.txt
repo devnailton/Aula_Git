@@ -36,6 +36,29 @@ git branch staging
 CRIA A BRANCH staging
 ****************************************************************
 git checkout staging
-MNUDA PARA A BRANCH staging
+MUDA PARA A BRANCH staging
+****************************************************************
+git Merge
 
+ANTES DE FAZER UM MERGE, DÊ UM GIT PULL
 
+Entra na branch que vai receber as atualizações
+git merge staging
+
+NESSE CASO AS ALTERAÇÕES NO CODIGO DA staging FOI COLADO EM CIMA DA BRANCH ATUAL
+LOGO EM SEGUIDA ELE MOSTRA AS ALTERAÇÕES QUE FORAM FEITAS
+
+O MAIS CORRETO A SE FAZER É:
+
+1 - git pull na branch principal
+2 - gerar uma nova branch a partir da branch principal
+3 - trabalhar e adicionar novas funcionalidades na nova branch que criou
+4 - Finalizar o trabalho na branch temporária
+5 - git checkout na branch principal
+6 - git pull
+7 - Mergiar(Unir) o código da branch temporária com a branch principal (depois de testar)
+8 - git push da branch principal
+****************************************************************
+git checkout -b sistema-de-login master
+
+CRIA UMA NOVA BRANCH COM O NOME sistema-de-login, A PARTIR DA BRANCH MASTER
