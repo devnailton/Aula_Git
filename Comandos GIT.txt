@@ -35,6 +35,9 @@ VER AS BRANCHS
 git branch staging
 CRIA A BRANCH staging
 ****************************************************************
+git branch -d <branch>
+DELETA A BRANCH
+****************************************************************
 git checkout staging
 MUDA PARA A BRANCH staging
 ****************************************************************
@@ -62,3 +65,11 @@ O MAIS CORRETO A SE FAZER É:
 git checkout -b sistema-de-login master
 
 CRIA UMA NOVA BRANCH COM O NOME sistema-de-login, A PARTIR DA BRANCH MASTER
+****************************************************************
+touch .gitignore
+
+CRIA O ARQUIVO GITIGNORE
+Dentro dele ocultei, por exemplo a pasta segredos e a fotos.png, abrir o arquivo e digitei:
+
+segredos/
+fotos.png
