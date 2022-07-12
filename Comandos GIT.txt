@@ -35,6 +35,9 @@ VER AS BRANCHS
 git branch staging
 CRIA A BRANCH staging
 ****************************************************************
+git branch -d <branch>
+DELETA A BRANCH
+****************************************************************
 git checkout staging
 MUDA PARA A BRANCH staging
 ****************************************************************
