@@ -23,6 +23,9 @@ git remote add origin https://github.com/NailtonSSantos/Aula_Git.git
 
 git push --set-upstream origin main
 ****************************************************************
+git remote remove origin
+REMOVE O LINK COM A PASTA NO GIT
+****************************************************************
 git reflog
 MOSTRA AS VERSÕES DO CÓDIGO
 ****************************************************************
