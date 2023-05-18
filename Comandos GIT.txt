@@ -26,7 +26,7 @@ git push --set-upstream origin main
 git remote remove origin
 REMOVE O LINK COM A PASTA NO GIT
 ****************************************************************
-git reflog
+git reflog --all
 MOSTRA AS VERSÕES DO CÓDIGO
 ****************************************************************
 git reset --hard 165hh85
