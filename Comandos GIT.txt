@@ -1,3 +1,9 @@
+git init
+INICIA O REPOSITÓRIO GIT NA PASTA ATUAL
+****************************************************************
+rm -rf .git
+REMOVE O REPOSITÓRIO GIT DA PASTA ATUAL
+****************************************************************
 git status
 QUAIS ARQUIVOS FORMA OU NÃO INCLUÍDOS NO CONTROLE DE VERSÃO
 ****************************************************************
