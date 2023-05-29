@@ -1,3 +1,9 @@
+git init
+INICIA O REPOSITÓRIO GIT NA PASTA ATUAL
+****************************************************************
+rm -rf .git
+REMOVE O REPOSITÓRIO GIT DA PASTA ATUAL
+****************************************************************
 git status
 QUAIS ARQUIVOS FORMA OU NÃO INCLUÍDOS NO CONTROLE DE VERSÃO
 ****************************************************************
@@ -23,7 +29,10 @@ git remote add origin https://github.com/NailtonSSantos/Aula_Git.git
 
 git push --set-upstream origin main
 ****************************************************************
-git reflog
+git remote remove origin
+REMOVE O LINK COM A PASTA NO GIT
+****************************************************************
+git reflog --all
 MOSTRA AS VERSÕES DO CÓDIGO
 ****************************************************************
 git reset --hard 165hh85
@@ -34,6 +43,9 @@ VER AS BRANCHS
 ****************************************************************
 git branch staging
 CRIA A BRANCH staging
+****************************************************************
+git branch -d <branch>
+DELETA A BRANCH
 ****************************************************************
 git checkout staging
 MUDA PARA A BRANCH staging
