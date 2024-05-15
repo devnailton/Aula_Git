@@ -1,3 +1,18 @@
+
+
+SSH
+
+Clica na foto > Settings > SSH and GPG Keys > Generate SSH Keys >
+
+Cheking for existing SSH Keys > Siga os passos na página para verificar se existe uma chave ssh em seu computador
+
+Para gerar vai em: Generate a new SSH Key and adding it to the ssh-agent > Siga os passos na página, depois volta para adicionar essa chave no Github
+
+Clica na foto > Settings > SSH and GPG Keys > add a new SSH Key > Siga os passos na página (vai pedir pra rodar um código no terminal do seu PC, esse código vai copiar a chave SSH - Área de transferência do SO) >
+
+Clica na foto > Settings > SSH and GPG Keys > Botão New SSH Key > Dá um nome pra ela e cola o a chave que foi copiada antes
+
+****************************************************************
 git init
 INICIA O REPOSITÓRIO GIT NA PASTA ATUAL
 ****************************************************************
