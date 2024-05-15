@@ -75,6 +75,14 @@ git checkout -b sistema-de-login master
 
 CRIA UMA NOVA BRANCH COM O NOME sistema-de-login, A PARTIR DA BRANCH MASTER
 ****************************************************************
+git checkout -b teste
+
+CRIA UMA NOVA BRANCH COM O NOME teste, E já entra na Branch nova
+****************************************************************
+touch teste.txt
+
+CRIA O ARQUIVO teste.txt
+****************************************************************
 touch .gitignore
 
 CRIA O ARQUIVO GITIGNORE
