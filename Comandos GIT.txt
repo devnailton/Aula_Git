@@ -105,3 +105,14 @@ Dentro dele ocultei, por exemplo a pasta segredos e a fotos.png, abrir o arquivo
 
 segredos/
 fotos.png
+
+****************************************************************
+
+Entendendo Mesclagem (Merge) vs Rebase:
+
+Mesclagem: Quando você usa git pull com a estratégia de mesclagem (padrão), ele cria um novo commit de mesclagem no histórico da sua branch local que combina as alterações remotas com as alterações locais. Isso cria um histórico de branch mais explícito, mas também pode levar a conflitos de mesclagem se as alterações locais se sobrepõem às alterações remotas.
+
+Rebase: Com o rebase, git pull repete seus commits locais em cima do commit remoto mais recente. Isso reescreve o histórico da sua branch local para parecer que você fez suas alterações locais diretamente em cima da branch remota atualizada. O rebase pode levar a um histórico de branch mais limpo, mas também pode causar problemas se você já compartilhou sua branch local com outras pessoas.
+
+git pull --merge origin master: Isso força uma mesclagem mesmo se pull.rebase estiver definido como true.
+git pull --rebase origin master: Isso força um rebase mesmo se pull.rebase estiver definido como false.
