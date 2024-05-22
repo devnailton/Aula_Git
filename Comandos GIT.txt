@@ -110,9 +110,22 @@ fotos.png
 
 Entendendo Mesclagem (Merge) vs Rebase:
 
-Mesclagem: Quando você usa git pull com a estratégia de mesclagem (padrão), ele cria um novo commit de mesclagem no histórico da sua branch local que combina as alterações remotas com as alterações locais. Isso cria um histórico de branch mais explícito, mas também pode levar a conflitos de mesclagem se as alterações locais se sobrepõem às alterações remotas.
+Opções de Configuração do Git:
 
-Rebase: Com o rebase, git pull repete seus commits locais em cima do commit remoto mais recente. Isso reescreve o histórico da sua branch local para parecer que você fez suas alterações locais diretamente em cima da branch remota atualizada. O rebase pode levar a um histórico de branch mais limpo, mas também pode causar problemas se você já compartilhou sua branch local com outras pessoas.
+    git config pull.rebase false (merge)
+        Esta opção fará um merge das mudanças remotas com as mudanças locais. Isso criará um commit de merge se houverem alterações locais não commitadas que não foram empurradas para o repositório              remoto.
+        Uso: Quando você deseja mesclar as mudanças remotas e locais, criando um histórico de commits que mostra a junção das duas linhas de desenvolvimento.
 
-git pull --merge origin master: Isso força uma mesclagem mesmo se pull.rebase estiver definido como true.
-git pull --rebase origin master: Isso força um rebase mesmo se pull.rebase estiver definido como false.
+        git config pull.rebase false
+        git pull
+
+    git config pull.rebase true (rebase)
+        Esta opção rebaseará suas mudanças locais no topo das mudanças remotas. Isso significa que as mudanças locais serão aplicadas após as mudanças remotas, mantendo um histórico linear de commits.
+        Uso: Quando você deseja um histórico de commits mais limpo e linear, aplicando suas alterações locais sobre as remotas.
+
+        git config pull.rebase true
+        git pull
+
+    git config pull.ff only (fast-forward only)
+        Esta opção só permitirá um pull se puder ser feito um fast-forward, ou seja, se a sua branch local puder ser avançada diretamente para a nova posição da branch remota sem criar commits                   adicionais. Se houverem mudanças locais que conflitam, o pull falhará.
+        Uso: Quando você deseja garantir que o pull não criará commits de merge ou rebases e que a branch local pode avançar diretamente.
