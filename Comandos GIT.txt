@@ -9,7 +9,7 @@ cat /root/.ssh/id_ed25519.pub
 Copia essa chave ssh para usar na configuração do Git
 
 Verificar se o ssh do git está ok no servidor
-ssh -T [git@github.com](mailto:git@github.com)
+ssh -T git@github.com
 
 
 Clica na foto > Settings > SSH and GPG Keys > Generate SSH Keys >
