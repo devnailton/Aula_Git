@@ -11,6 +11,11 @@ Copia essa chave ssh para usar na configuração do Git
 Verificar se o ssh do git está ok no servidor
 ssh -T git@github.com
 
+Permisstir o git pra qualquer usuário, caso apareca a mensagem de PERMISSION DENIED
+sudo chown -R $USER:www-data /var/www/html
+sudo chmod -R 775 /var/www/html
+ls -ld /var/www/html
+
 
 Clica na foto > Settings > SSH and GPG Keys > Generate SSH Keys >
 
