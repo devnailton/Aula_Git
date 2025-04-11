@@ -65,6 +65,15 @@ REMOVE O LINK COM A PASTA NO GIT
 git reflog --all
 MOSTRA AS VERSÕES DO CÓDIGO
 ****************************************************************
+Se você tentou alterar algo e não gostou, é possível voltar para
+o último ponto antes destas alterações. Óbvio, você deve ter feito
+um commit quando tudo estava Ok.
+
+git clean -fd
+Esse comando exclui as últimas alterações não rastradas
+("Não commitadas")
+****************************************************************
+ou voltar para uma branch anterior
 git reset --hard 165hh85
 VOLTA A VERSÃO ANTERIOR, DESCRITA PELO ID 165hh85
 ****************************************************************
