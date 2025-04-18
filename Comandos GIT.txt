@@ -43,6 +43,9 @@ ADICIONA O ARQUIVO AO CONTROLE DE VERSÃO
 git add .
 ADICIONA TODOS OS ARQUIVOS AO CONTROLE DE VERSÃO
 ****************************************************************
+Para tirar tudo do stage (desfazer git add .):
+git reset
+****************************************************************
 git commit -m "Commit Inicial"
 CRIA A PRIMEIRA VERSÃO DO CÓDIGO
 ****************************************************************
