@@ -68,6 +68,13 @@ REMOVE O LINK COM A PASTA NO GIT
 git reflog --all
 MOSTRA AS VERSÕES DO CÓDIGO
 ****************************************************************
+Forçar o Push para substituir no repositório do Github
+Útil quando você faz uma alteração local e quer que ela seja a válida, como por exemplo, um reset, voltando um Commit
+
+git reset --hard HASH_DO_COMMIT
+git push --force-with-lease origin main
+
+****************************************************************
 Se você tentou alterar algo e não gostou, é possível voltar para
 o último ponto antes destas alterações. Óbvio, você deve ter feito
 um commit quando tudo estava Ok.
